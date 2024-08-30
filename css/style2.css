@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  h1{
+    font-size: 50px;
+    line-height: 64px;
+  }
+  h2{
+    font-size: 46px;
+    line-height: 54px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  h6{
+    font-weight: 700;
+    font-size: 12px;
+  }
+  p{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+  }
+
+/* navbar */
+nav{
+    line-height:30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgba(245, 245, 245, 0.486);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    position:sticky;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+nav .nav-link{
+    color: black;
+}
+nav .nav-link:hover{
+    color: rgba(90, 185, 154, 0.603);
+      text-decoration: underline;
+}
+nav .active{
+    color: rgba(90, 185, 154, 0.603);
+      text-decoration: underline;
+}
+
+li.nav-item{
+    padding-top: 13px;
+}
+li #icon{
+    padding-top:14px;
+}
+
+/* slideshow */
+#slideshow{
+    padding:2rem;
+}
+#slideshow img{
+    border-radius: 20px;
+}
+
+/* product container */
+#product{
+    text-align: center;
+  }
+  
+  #product .pcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
+  }
+  #product .pcontainer a,
+  #product .pcontainer a::after{
+    text-decoration: none;
+  }
+
+  /* san pham */
+#product .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    margin: 10px 0;
+    transition: 0.2s ease;
+    position: relative;
+    background-color: cadetblue;
+    overflow-y: hidden;
+  }
+  #product .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  #product .pro .desc{
+    text-align: start;
+    padding: 10px 0;
+  }
+  #product .pro .desc h5{
+    font-family: monospace;
+    padding-top: 5px;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  #product .pro .desc h4{
+    font-family: monospace;
+    color:black;
+    font-size: 20px;
+  }
+  #product .pro img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  /* addtocart button */
+  #product .pro button{
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: absolute;
+    bottom: 9px;
+    right: 10px;
+  }
